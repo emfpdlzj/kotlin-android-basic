@@ -8,14 +8,29 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_random2"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="268dp"
+        android:text="목표"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_random3"
+        app:layout_constraintEnd_toEndOf="@+id/tv_random3"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="@+id/tv_random"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/tv_random"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="408dp"
         android:text="0.00"
         android:textAlignment="center"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +43,34 @@
         android:textAlignment="center"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:text="참가자 1"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timer2"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="200dp"
+        android:text="현재"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timer"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_timer"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
