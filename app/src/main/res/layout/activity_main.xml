@@ -8,26 +8,47 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_hello"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:text="Hello World!"
+        android:id="@+id/tv_random"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="192dp"
+        android:text="0.00"
+        android:textAlignment="center"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="408dp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_kor"
+        android:id="@+id/btn_main"
         android:layout_width="202dp"
         android:layout_height="141dp"
         android:layout_marginBottom="160dp"
-        android:text="한글로"
-        android:textSize="48sp"
+        android:text="시작/정지"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="534dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
