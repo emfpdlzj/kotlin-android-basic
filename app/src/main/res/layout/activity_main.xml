@@ -8,6 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_minus.setOnClickListener {" />
+
+    <TextView
         android:id="@+id/tv_random2"
         android:layout_width="149dp"
         android:layout_height="71dp"
@@ -25,10 +31,10 @@
         android:id="@+id/tv_random"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="408dp"
         android:text="0.00"
         android:textAlignment="center"
         android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,12 +44,12 @@
         android:id="@+id/tv_timer"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="408dp"
         android:text="0.00"
         android:textAlignment="center"
         android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_main"
+        android:id="@+id/btn_start"
         android:layout_width="202dp"
         android:layout_height="141dp"
         android:layout_marginBottom="160dp"
@@ -82,6 +88,18 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="261dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:text="처음으로"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
