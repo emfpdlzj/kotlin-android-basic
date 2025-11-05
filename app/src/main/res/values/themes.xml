@@ -10,6 +10,10 @@
         <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>
         <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>
 
+        //상태바 삭제하기
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
     </style>
 
     <style name="Theme.Practice" parent="Base.Theme.Practice" />

@@ -7,10 +7,12 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import java.util.*
 import kotlin.concurrent.timer
 import kotlin.math.abs
-
+import com.google.android.gms.ads.AdView
 
 class MainActivity : AppCompatActivity() {
     var p_num = 3
@@ -19,6 +21,12 @@ class MainActivity : AppCompatActivity() {
     var isBlind = false
     fun start(){
         setContentView(R.layout.activity_start) //xml파일 연결
+        MobileAds.initialize(this) {}
+
+        val adView2 = findViewById<AdView>(R.id.adView2)
+        val adRequest = AdRequest.Builder().build()
+        adView2.loadAd(adRequest)
+
         val tv_pnum: TextView = findViewById(R.id.tv_pnum)
         val btn_minus: Button = findViewById(R.id.btn_minus)
         val btn_plus: Button = findViewById(R.id.btn_plus)
@@ -51,6 +59,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun main(){
         setContentView(R.layout.activity_main) //xml파일 연결
+        MobileAds.initialize(this) {}
+
+        val adView = findViewById<AdView>(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
 
         var timerTask: Timer? = null
         var stage = 1
@@ -127,6 +140,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun end(){
         setContentView(R.layout.activity_end) //xml파일 연결
+        MobileAds.initialize(this) {}
+
+        val adView3 = findViewById<AdView>(R.id.adView3)
+        val adRequest = AdRequest.Builder().build()
+        adView3.loadAd(adRequest)
 
         var tv_lpoint: TextView = findViewById(R.id.tv_lpoint)
         var tv_last: TextView = findViewById(R.id.tv_last)
