@@ -1,10 +1,12 @@
 package com.study.practice
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import java.util.*
 import kotlin.concurrent.timer
 import kotlin.math.abs
@@ -62,6 +64,24 @@ class MainActivity : AppCompatActivity() {
 
         val random_box = Random() //랜덤한 숫자를 뽑을 수 있는 객체. nextInt사용.
         val num = random_box.nextInt(1001)
+
+        val color_list = mutableListOf<String>( "#32FFADAD",
+            "#32FFD6A5",
+            "#32FDFFB6",
+            "#32CAFFBF",
+            "#32A0C4FF",
+            "#32BDB2FF",
+            "#32FFC6FF")
+        var color_index = k%7-1
+        if(color_index==-1){
+            color_index=6
+        }
+
+        val color_sel = color_list.get(color_index)
+
+        val bg_main : ConstraintLayout = findViewById(R.id.bg_main)
+        bg_main.setBackgroundColor(Color.parseColor(color_sel))
+
         tv.text=(num.toFloat()/100).toString()
         btn.text= "시작"
         tv_people.text="참가자 $k"

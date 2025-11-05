@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/bg_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBEDB6"
     tools:context=".MainActivity">
 
     <TextView
@@ -36,6 +37,7 @@
         android:layout_width="202dp"
         android:layout_height="141dp"
         android:layout_marginBottom="36dp"
+        android:backgroundTint="#82D6E7"
         android:text="시작"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,25 +50,18 @@
         android:layout_width="336dp"
         android:layout_height="101dp"
         android:layout_marginBottom="224dp"
+        android:backgroundTint="#2E7117"
         android:text="BLIND 모드 OFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_point"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="534dp" />
-
     <Button
         android:id="@+id/btn_minus"
-        android:layout_width="79dp"
-        android:layout_height="73dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#63C549"
         android:text="-"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,9 +71,11 @@
 
     <Button
         android:id="@+id/btn_plus"
-        android:layout_width="93dp"
-        android:layout_height="82dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#65C54C"
         android:text="+"
+        android:textColorLink="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
