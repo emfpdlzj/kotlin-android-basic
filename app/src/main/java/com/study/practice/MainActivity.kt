@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         var sec: Int = 0
         val tv: TextView = findViewById(R.id.tv_random2)
         val tv_t: TextView = findViewById(R.id.tv_timer)
-        val tv_p: TextView = findViewById(R.id.tv_point)
+        val tv_p: TextView = findViewById(R.id.tv_lpoint)
         val tv_people: TextView = findViewById(R.id.tv_people)
         val btn: Button = findViewById(R.id.btn_start)
         val btn_reset: Button = findViewById(R.id.btn_reset)

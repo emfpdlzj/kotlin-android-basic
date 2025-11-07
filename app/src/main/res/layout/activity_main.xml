@@ -6,24 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBEDB6"
+    android:textAlignment="center"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="btn_minus.setOnClickListener {" />
 
     <TextView
         android:id="@+id/tv_random2"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="268dp"
         android:text="목표"
         android:textAlignment="center"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_random3"
-        app:layout_constraintEnd_toEndOf="@+id/tv_random3"
+        app:layout_constraintBottom_toTopOf="@+id/tv_random"
         app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toStartOf="@+id/tv_random"
         app:layout_constraintTop_toTopOf="parent" />
@@ -98,7 +91,6 @@
         android:layout_width="261dp"
         android:layout_height="106dp"
         android:layout_marginBottom="16dp"
-        android:background="#E7A6E1"
         android:backgroundTint="#E7A6E1"
         android:fontFamily="@font/font_resource"
         android:text="처음으로"
